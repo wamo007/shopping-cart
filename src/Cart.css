@@ -1,0 +1,118 @@
+.cart-template {
+    padding: 0 5% 0 5%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    column-gap: 1.5rem;
+    grid-template-columns: 8fr 1fr;
+}
+.cart-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.cart-template>h2 {
+    position: absolute;
+    place-self: center;
+    bottom: 30vw;
+}
+
+.cart, .total {
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0 0 10px gainsboro;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.item-description>img {
+    height: 100px;
+    width: 100px;
+    min-width: 100px;
+    min-height: 100px;
+    object-fit: contain;
+}
+
+.total {
+    width: 15vw;
+}
+
+.item-description {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    width: 60vw;
+}
+
+.item-description>div {
+    font-size: 20px;
+}
+
+.count-change {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.redact-num {
+    background-color: gainsboro;
+    height: 3rem;
+    border-radius: 20px;
+    border: 2px outset rgb(160, 27, 27);
+    gap: 0.4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.redact-num>button {
+    border-radius: 26px;
+    width: 1.3rem;
+    height: 1.3rem;
+}
+
+.redact-num>div, .price {
+    font-weight: 600;
+}
+
+button {
+    border: 1px solid white;
+}
+
+button:hover {
+    border: 1px inset rgb(160, 27, 27);
+}
+
+.count-change>button {
+    background-color: white;
+    border-radius: 12px;
+}
+
+.total {
+    flex-direction: column;
+}
+
+.total>div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.total>div>:nth-child(2) {
+    font-weight: 600;
+}
+
+.total>button {
+    padding: 8px;
+    background-color: rgb(160, 27, 27);
+    width: 7rem;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    align-self: center;
+}
