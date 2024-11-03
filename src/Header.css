@@ -1,5 +1,14 @@
 #nav-drop {
     display: none;
+    margin-left: 0.1rem;
+    background-color: inherit;
+    border: none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    appearance:none;
+    background: url(public/menu.svg) no-repeat right;
+    outline: none;
+    background-size: 35px;
 }
 
 header {
@@ -54,4 +63,19 @@ li>* {
     position: relative;
     bottom: 10px;
     right: 3px;
+}
+
+
+@media (max-width: 700px) {
+    .nav-links {
+        display: none;
+    }
+    
+    #nav-drop {
+        display: block;
+    }
+
+    .logo {
+        gap: 0.1rem;
+    }
 }

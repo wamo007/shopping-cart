@@ -96,18 +96,25 @@ body {
     transition: 10s linear;
   }
 
-  .aboutPage, .contactsPage {
-    text-align: center;
-    width: 50%;
-    margin: auto;
-    font-size: 20px;
-  }
+.aboutPage, .contactsPage {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+}
 
-  .numEmail {
-    width: 250px;
-    margin: auto;
-    font-size: 20px;
-    margin-top: 10px;
-    padding: 5px;
-    box-shadow: 0 0 10px gainsboro;
+.numEmail {
+  width: 250px;
+  margin: auto;
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 5px;
+  box-shadow: 0 0 10px gainsboro;
+}
+
+@media (max-width: 700px) {
+  .call-to-action {
+    align-items: center;
+    width: auto;
   }
+}

@@ -64,3 +64,9 @@ h1 {
 .card>div>button:hover {
     border: 1px solid rebeccapurple;
 }
+
+@media (max-width: 700px) {
+    #shop-drop {
+        right: -2px;
+    }
+  }

@@ -36,7 +36,7 @@ function Nav() {
         </Link>
 
         <select name="nav-drop" id="nav-drop" onChange={navChange} defaultValue=''>
-            <option value="" disabled>...</option>
+            <option value="" disabled></option>
             <option value="/">Home</option>
             <option value="/shop">Shop</option>
             <option value="/about">Who are we?</option>
